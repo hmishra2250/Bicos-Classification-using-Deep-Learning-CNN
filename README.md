@@ -18,7 +18,7 @@ First off, collect the dataset run the data.py file using command `python data.p
 - [x] Using VGG16 highly increases the performance as the imagenet and this dataset has many similar images (hence features).
 - [x] Using Data Augmentation further boosts the performance
 - [x] Cross-validation helps in parameter tuning of all aspects
-- [ ] Since the number of images is less, fine-tuning probably won't help much, however, its one in the todo list (easy to code but resource constraint) *_Future Work_*
+- [ ] Since the number of images is less, fine-tuning probably won't help much, however, its one in the todo list (easy to code but resource constraint) **_Future Work_**
 - [x] Generalization error should be assessed properly on unseen data as validation performance can be misleading. For this, we divide the data into train and test. Further, divide the train data into train and validation (or cross-validation depending on the usage). However, the final performance must be reported on the test set.
 - [x] tSNE doesn't helps much in visualization and understanding (this) dataset
-- [ ] Last but not the least, we can also take output of some intermediate layers and train a simpler model (like SVM) to handle case if the data distribution is different from the one on which base model was trained. *_Future Work_*
+- [ ] Last but not the least, we can also take output of some intermediate layers and train a simpler model (like SVM) to handle case if the data distribution is different from the one on which base model was trained. **_Future Work_**
