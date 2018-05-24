@@ -2,6 +2,13 @@ import os
 import numpy as np
 import cv2
 from keras.utils import to_categorical
+import scipy.io
+
+
+labels = scipy.io.loadmat("imagelabels.mat")
+for i in data:
+    if '__' not in i and 'readme' not in i:
+        np.savetxt("labels.csv", data[i], fmt="%i", delimiter=',')
 
 
 files = ['jpg/' + x  for x in os.listdir('jpg/')]
